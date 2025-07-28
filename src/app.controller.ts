@@ -9,4 +9,12 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+  @Get('Hello')
+  getHelloPlusName(): string {
+    return this.appService.getHelloPlusName();
+  }
+  @Get('time')
+  getTime(): Date {
+    return this.appService.getTime();
+  }
 }
